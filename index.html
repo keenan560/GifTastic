@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="gif.js"> </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>GifTastic API</title>
+</head>
+
+<body>  
+    <div class="container-fluid">
+        <div id="array" class="row">
+            <!-- Append buttons from array here -->
+        </div>
+        <div class="row col-12 mr-0">
+            <div id="input" class=" col-4 mr-0">
+                <!-- Add a Topic Input box -->
+                <form id="topic-form">
+                    <div class="form-group">
+                        <label class="text-white">Add a topic</label>
+                        <input type="text" class="form-control" id="input-topic" name="ntopic" placeholder=""/>
+                    </div>
+                    <input value="Submit" type="button" id="submit" class="btn btn-secondary"/>
+                </form>
+            </div>
+            <div class="containter">
+                <div id='results' class="row col-6">
+                    <!-- Append Gif results here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
