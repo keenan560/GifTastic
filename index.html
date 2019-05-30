@@ -10,13 +10,17 @@
     <script src="gif.js"> </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <audio>
+        <source id="static" src="tv-static-01.mp3" type="audio/mp3">
+    </audio>
     <title>GifTastic API</title>
 </head>
 
-<body>  
+<body>
     <div class="container-fluid">
-        <div id="array" class="row">
+        <div id="array" class="row ml-3">
             <!-- Append buttons from array here -->
         </div>
         <div class="row col-12 mr-0">
@@ -24,10 +28,12 @@
                 <!-- Add a Topic Input box -->
                 <form id="topic-form">
                     <div class="form-group">
-                        <label class="text-white">Add a topic</label>
-                        <input type="text" class="form-control" id="input-topic" name="ntopic" placeholder=""/>
+                        <label class="text-dark">Add a TV Show...</label>
+                        <input type="text" class="form-control" id="input-topic" name="ntopic" placeholder="" />
+
                     </div>
-                    <input value="Submit" type="button" id="submit" class="btn btn-secondary"/>
+                    <input value="Add TV Show!" type="button" id="submit" class="btn btn-lg btn-dark" />
+                    <button id="clear" class="btn btn-lg btn-dark ml-3">Clear</button>
                 </form>
             </div>
             <div class="containter">
@@ -37,6 +43,7 @@
             </div>
         </div>
     </div>
+   
 </body>
 
 </html>

@@ -1,7 +1,9 @@
 
 
 body {
-    background-color: darkslategrey;
+    background-color: lightgray;
+    font-family: 'Russo One', sans-serif !important; 
+    font-size: 18px;
 }
 
 
@@ -23,8 +25,10 @@ form {
     height:  200px;
 }
 
-img {
+
+.img-thumbnail {
     margin: 15px;
     border: solid 5px white;
+    /* position: relative */
 }
 
