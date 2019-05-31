@@ -12,9 +12,6 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <audio>
-        <source id="static" src="tv-static-01.mp3" type="audio/mp3">
-    </audio>
     <title>GifTastic API</title>
 </head>
 
@@ -26,14 +23,14 @@
         <div class="row col-12 mr-0">
             <div id="input" class=" col-4 mr-0">
                 <!-- Add a Topic Input box -->
-                <form id="topic-form">
+                <form id="topic-form" class="mt-5">
                     <div class="form-group">
-                        <label class="text-dark">Add a TV Show...</label>
+                        <label class="text-white">Add a TV Show...</label>
                         <input type="text" class="form-control" id="input-topic" name="ntopic" placeholder="" />
 
                     </div>
-                    <input value="Add TV Show!" type="button" id="submit" class="btn btn-lg btn-dark" />
-                    <button id="clear" class="btn btn-lg btn-dark ml-3">Clear</button>
+                    <input value="Add TV Show!" type="button" id="submit" class="btn btn-lg btn-primary" />
+                    <button id="clear" class="btn btn-lg btn-warning ml-3">Clear</button>
                 </form>
             </div>
             <div class="containter">
@@ -43,7 +40,12 @@
             </div>
         </div>
     </div>
-   
+    <div class="jumbotron text-center col-6 ml-5 mt-5 bg-dark text-white">
+        <h1 class="display-5">Welcome to tV Show Gifs!</h1>
+        <p>click on the shows above or search to create your own</p>
+        <img class='d-inline-block align-top' src="https://cdn0.iconfinder.com/data/icons/electronics-60/48/20-512.png"
+            height="50" width="50" alt="tvicon">
+    </div>
 </body>
 
 </html>

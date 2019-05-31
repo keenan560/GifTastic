@@ -1,7 +1,14 @@
 
+body { 
+  background: url(https://media3.giphy.com/media/Ph0oIVQeuvh0k/giphy.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 body {
-    background-color: lightgray;
     font-family: 'Russo One', sans-serif !important; 
     font-size: 18px;
 }
@@ -25,10 +32,35 @@ form {
     height:  200px;
 }
 
+figcaption {
+    color: yellow;
+    font-size: 20px;
+    text-align: center;
+}
 
 .img-thumbnail {
     margin: 15px;
-    border: solid 5px white;
+    border: solid 5px black;
     /* position: relative */
 }
+video:hover , img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s; 
 
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
