@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///Users/keenanmapp/Documents/GifTastic/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./GifTastic API_files/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="file:///Users/keenanmapp/Documents/GifTastic/gif.js"> </script>
+    <link rel="stylesheet" href="./GifTastic API_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./GifTastic API_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="file:///Users/keenanmapp/Documents/GifTastic/style.css">
+    <title>GifTastic API</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="array" class="row ml-3">
+            <!-- Append buttons from array here -->
+        <button class="bg-dark gif btn btn-lg text-white mx-3 mb-2 mt-2" value="Game of Thrones">Game of Thrones</button><button class="bg-dark gif btn btn-lg text-white mx-3 mb-2 mt-2" value="The Good Place">The Good Place</button><button class="bg-dark gif btn btn-lg text-white mx-3 mb-2 mt-2" value="The Handmaid&#39;s Tale">The Handmaid's Tale</button><button class="bg-dark gif btn btn-lg text-white mx-3 mb-2 mt-2" value="Killing Eve">Killing Eve</button><button class="bg-dark gif btn btn-lg text-white mx-3 mb-2 mt-2" value="The Americans">The Americans</button><button class="bg-dark gif btn btn-lg text-white mx-3 mb-2 mt-2" value="Better Call Saul">Better Call Saul</button><button class="bg-dark gif btn btn-lg text-white mx-3 mb-2 mt-2" value="The Walking Dead">The Walking Dead</button><button class="btn gif btn-lg bg-dark text-white mx-2 mb-3 mt-3" value="hello">hello</button><button class="btn gif btn-lg bg-dark text-white mx-2 mb-3 mt-3" value="UFC">UFC</button></div>
+        <div class="row col-12 mr-0">
+            <div id="input" class=" col-4 mr-0">
+                <!-- Add a Topic Input box -->
+                <form id="topic-form" class="mt-5">
+                    <div class="form-group">
+                        <label class="text-white">Add a TV Show...</label>
+                        <input type="text" class="form-control" id="input-topic" name="ntopic" placeholder="">
+
+                    </div>
+                    <input value="Add TV Show!" type="button" id="submit" class="btn btn-lg btn-primary">
+                    <button id="clear" class="btn btn-lg btn-warning ml-3">Clear</button>
+                </form>
+            </div>
+            <div class="containter">
+                <div id="results" class="row col-6"><figure><video src="https://media0.giphy.com/media/3oz8xBE9Nn18hK0iac/giphy-loop.mp4" id="image00" height="200" width="200" border="3px" class="gifs ml-4 img-thumbnail" type="video/mp4"></video><figcaption>Rated: pg </figcaption></figure><figure><video src="https://media3.giphy.com/media/tuWADkb2g3PAk/giphy-loop.mp4" id="image01" height="200" width="200" border="3px" class="gifs ml-4 img-thumbnail" type="video/mp4"></video><figcaption>Rated: pg </figcaption></figure><figure><video src="https://media2.giphy.com/media/26FKUGbP1mgqsvgC4/giphy-loop.mp4" id="image02" height="200" width="200" border="3px" class="gifs ml-4 img-thumbnail" type="video/mp4"></video><figcaption>Rated: pg </figcaption></figure><figure><video src="https://media2.giphy.com/media/xT0xeGmfiuGTZ1kUiQ/giphy-loop.mp4" id="image03" height="200" width="200" border="3px" class="gifs ml-4 img-thumbnail" type="video/mp4"></video><figcaption>Rated: g </figcaption></figure><figure><video src="https://media2.giphy.com/media/l2JhpdNap1WHhlWxi/giphy-loop.mp4" id="image04" height="200" width="200" border="3px" class="gifs ml-4 img-thumbnail" type="video/mp4"></video><figcaption>Rated: pg </figcaption></figure><figure><video src="https://media0.giphy.com/media/XfT1Xb2O2ShHy/giphy-loop.mp4" id="image05" height="200" width="200" border="3px" class="gifs ml-4 img-thumbnail" type="video/mp4"></video><figcaption>Rated: pg </figcaption></figure><figure><video src="https://media0.giphy.com/media/l2YWFGWKH3b32bEIg/giphy-loop.mp4" id="image06" height="200" width="200" border="3px" class="gifs ml-4 img-thumbnail" type="video/mp4"></video><figcaption>Rated: pg </figcaption></figure><figure><video src="https://media2.giphy.com/media/3oeSAYNUIwvGwl5RRK/giphy-loop.mp4" id="image07" height="200" width="200" border="3px" class="gifs ml-4 img-thumbnail" type="video/mp4"></video><figcaption>Rated: pg </figcaption></figure><figure><video src="https://media3.giphy.com/media/3ohzdV8bhzEd1KYcb6/giphy-loop.mp4" id="image08" height="200" width="200" border="3px" class="gifs ml-4 img-thumbnail" type="video/mp4"></video><figcaption>Rated: g </figcaption></figure><figure><video src="https://media2.giphy.com/media/3oz8xZIKFyKKco3IVq/giphy-loop.mp4" id="image09" height="200" width="200" border="3px" class="gifs ml-4 img-thumbnail" type="video/mp4"></video><figcaption>Rated: g </figcaption></figure></div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron text-center col-6 ml-5 mt-5 bg-dark text-white" style="display: none;">
+        <h1 class="display-5">Welcome to tV Show Gifs!</h1>
+        <p>click on the shows above or search to create your own</p>
+        <img class="d-inline-block align-top" src="./GifTastic API_files/20-512.png" height="50" width="50" alt="tvicon">
+    </div>
+
+
+</body></html>

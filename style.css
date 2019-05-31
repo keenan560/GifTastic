@@ -1,6 +1,6 @@
 
 body { 
-  background: url(https://media3.giphy.com/media/Ph0oIVQeuvh0k/giphy.gif) no-repeat center center fixed; 
+  background: url(http://www.textures4photoshop.com/tex/thumbs/TV-SMPTE-color-bars-background-free-thumb35.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -33,7 +33,7 @@ form {
 }
 
 figcaption {
-    color: yellow;
+    color: cadetblue;
     font-size: 20px;
     text-align: center;
 }
@@ -44,10 +44,7 @@ figcaption {
     /* position: relative */
 }
 video:hover , img:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s; 
-
-  /* When the animation is finished, start again */
   animation-iteration-count: infinite; 
 }
 

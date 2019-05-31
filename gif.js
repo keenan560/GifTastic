@@ -11,7 +11,6 @@ function renderArray(topics) {
     }
 }
 
-var btnVal;
 //Code to make request to API
 function apiCall() {
     $(".jumbotron").hide();
