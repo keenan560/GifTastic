@@ -12,7 +12,7 @@ function renderArray(topics) {
 }
 
 var btnVal;
-
+//Code to make request to API
 function apiCall() {
     $(".jumbotron").hide();
     $("#results").empty();
@@ -26,7 +26,6 @@ function apiCall() {
         method: "GET"
     }).then(function (response) {
         console.log(response);
-        // console.log(this);
         for (var i = 0; i < response.data.length; i++) {
             var gif = $(`<figure><video src='${response.data[i].images.looping.mp4}' id='image0${i}' height='200' width='200' border='3px'class='gifs ml-4 img-thumbnail' type='video/mp4'></video><figcaption>Rated: ${response.data[i].rating} </figcaption></figure>`);
 
