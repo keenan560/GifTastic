@@ -14,6 +14,7 @@ function renderArray(topics) {
 //Code to make request to API
 function apiCall() {
     $(".jumbotron").hide();
+
     $("#results").empty();
 
     btnVal = $(this).val().trim();
@@ -27,7 +28,6 @@ function apiCall() {
         console.log(response);
         for (var i = 0; i < response.data.length; i++) {
             var gif = $(`<figure><video src='${response.data[i].images.looping.mp4}' id='image0${i}' height='200' width='200' border='3px'class='gifs ml-4 img-thumbnail' type='video/mp4'></video><figcaption>Rated: ${response.data[i].rating} </figcaption></figure>`);
-
             $("#results").append(gif);
             $("#image0" + i).click(function () {
                 console.log(this);
@@ -40,6 +40,7 @@ function apiCall() {
         }
     })
     playAudio(channel);
+
 }
 //Code to clear results 
 function clear() {

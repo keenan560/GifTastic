@@ -8,6 +8,7 @@ body {
 }
 
 
+
 body {
     font-family: 'Russo One', sans-serif !important; 
     font-size: 18px;
@@ -32,8 +33,9 @@ form {
     height:  200px;
 }
 
+
 figcaption {
-    color: cadetblue;
+    color: blue;
     font-size: 20px;
     text-align: center;
 }
@@ -41,7 +43,7 @@ figcaption {
 .img-thumbnail {
     margin: 15px;
     border: solid 5px black;
-    /* position: relative */
+ 
 }
 video:hover , img:hover {
   animation: shake 0.5s; 
